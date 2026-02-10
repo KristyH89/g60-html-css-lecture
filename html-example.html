@@ -1,123 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML CSS Basics Tutorial</title>
-    <style>
-      
-    </style>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example Page</title>
 
-  <body>
-   
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+    <!-- Meta informatie -->
+    <meta name="description" content="This is an awesome website about web development.">
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript, coding">
+    <meta name="author" content="Mehrdad Javan">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="form-style.css">
+    <link rel="stylesheet" href="table-style.css">
+</head>
+<body>
+
+    <!-- Header -->
     <header>
-      <h1>HTML CSS Basics Tutorial</h1>
+        <h1>HTML CSS Basics Tutorial</h1>
     </header>
 
-   
+    <!-- Navigation -->
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-      <a href="#">Contact</a>
+        <a href="html-demo.html">Home</a>
+        <a href="html-css-example.html">Form</a>
+        <a href="html-example.html">Other</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    
+    <!-- Main Content -->
     <main>
-    
-      <form>
-        <h3>Registration Form</h3>
-        <p>Please fill in this form to register.</p>
-        <hr />
-
-        <label for="fn"><b>First Name</b></label>
-        <input
-          type="text"
-          id="fn"
-          placeholder="Enter First Name"
-          name="firstName"
-          required
-        /><br />
-
-        <label for="ln"><b>Last Name</b></label>
-        <input
-          type="text"
-          id="ln"
-          placeholder="Enter Last Name"
-          name="lastName"
-          required
-        /><br />
-
-        <label for="email"><b>Email</b></label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter Email"
-          name="email"
-          required
-        /><br />
-
-        <label for="course">Course</label>
-        <select id="course" name="course">
-          <option value="1">Java</option>
-          <option value="2">C#</option>
-          <option value="3">Python</option></select
-        ><br />
-
-        <label for="description">Subject</label>
-        <textarea
-          id="description"
-          name="description"
-          placeholder="Enter subject details here..."
-        ></textarea
-        ><br />
-
-        <hr />
-        <br />
-
-        <button type="submit">Register</button>
-      </form>
-
-      <hr />
-
-      <table>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th colspan="2">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mehrdad</td>
-            <td>Javan</td>
-            <td>
-              <button type="submit">Edit</button>
-            </td>
-            <td>
-              <button type="submit">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Simon</td>
-            <td>Elbrink</td>
-            <td>
-              <button type="submit">Edit</button>
-            </td>
-            <td>
-              <button type="submit">Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <h2>Example Page Content</h2>
+        <p>This page can have any content you want. Keep the header, nav, and footer consistent.</p>
     </main>
 
-    <footer>Copyright &copy; 2023 Lexicon</footer>
-  </body>
+    <!-- Footer -->
+    <footer>
+        Copyright &copy; 2023 Lexicon
+    </footer>
+
+</body>
 </html>

@@ -1,115 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML CSS Basics Tutorial</title>
-    <style>
-        * {
-            margin: 0;
-        }
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
+    <!-- Meta informatie -->
+    <meta name="description" content="This is an awesome website about web development.">
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript, coding">
+    <meta name="author" content="Mehrdad Javan">
 
-        body {
-            font-family: "Arial", "sans-serif";
-            background-color: #eaf6ff;
-        }
-
-        header {
-            background-color: #1d1b1b;
-            color: #fff;
-
-            padding: 20px;
-
-            text-align: center;
-
-            font-size: 32px;
-
-        }
-
-        nav {
-            background-color: #7e7e7e;
-            padding: 10px;
-
-            text-align: center;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-       #fn-label {
-            color: red;
-        }
-
-        .container {
-            padding: 20px;
-            color: #333;
-
-        }
-
-        #fn {
-            color: #ff0000;
-        }
-
-    </style>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="form-style.css">
     <link rel="stylesheet" href="table-style.css">
 </head>
-
 <body>
 
+    <!-- Header -->
     <header>
         <h1>HTML CSS Basics Tutorial</h1>
     </header>
 
-
+    <!-- Navigation -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
-        <a href="#">Contact</a>
+        <a href="html-demo.html">Home</a>
+        <a href="html-css-example.html">Form</a>
+        <a href="html-example.html">Other</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-
+    <!-- Main Content -->
     <main>
-
         <form>
             <h3>Registration Form</h3>
             <p>Please fill in this form to register.</p>
-            <hr />
+            <hr>
 
-            <label id="fn-label" for="fn"><b>First Name</b></label>
-            <input type="text" id="fn" placeholder="Enter First Name" name="firstName" required /><br />
+            <label for="fn"><b>First Name</b></label>
+            <input type="text" id="fn" placeholder="Enter First Name" name="firstName" required>
 
             <label for="ln"><b>Last Name</b></label>
-            <input type="text" id="ln" placeholder="Enter Last Name" name="lastName" required /><br />
+            <input type="text" id="ln" placeholder="Enter Last Name" name="lastName" required>
 
             <label for="email"><b>Email</b></label>
-            <input type="email" id="email" placeholder="Enter Email" name="email" required /><br />
+            <input type="email" id="email" placeholder="Enter Email" name="email" required>
 
             <label for="course">Course</label>
             <select id="course" name="course">
                 <option value="1">Java</option>
                 <option value="2">C#</option>
                 <option value="3">Python</option>
-            </select><br />
+            </select>
 
             <label for="description">Subject</label>
-            <textarea id="description" name="description" placeholder="Enter subject details here..."></textarea><br />
+            <textarea id="description" name="description" placeholder="Enter subject details here..."></textarea>
 
-            <hr />
-            <br />
+            <hr>
 
             <button type="submit">Register</button>
         </form>
 
-        <hr />
+        <hr>
 
         <table>
             <thead>
@@ -125,29 +80,24 @@
                     <td>1</td>
                     <td>Mehrdad</td>
                     <td>Javan</td>
-                    <td>
-                        <button type="submit">Edit</button>
-                    </td>
-                    <td>
-                        <button type="submit">Delete</button>
-                    </td>
+                    <td><button class="edit-btn">Edit</button></td>
+                    <td><button class="delete-btn">Delete</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Simon</td>
                     <td>Elbrink</td>
-                    <td>
-                        <button type="submit">Edit</button>
-                    </td>
-                    <td>
-                        <button type="submit">Delete</button>
-                    </td>
+                    <td><button class="edit-btn">Edit</button></td>
+                    <td><button class="delete-btn">Delete</button></td>
                 </tr>
             </tbody>
         </table>
     </main>
 
-    <footer>Copyright &copy; 2023 Lexicon</footer>
-</body>
+    <!-- Footer -->
+    <footer>
+        Copyright &copy; 2023 Lexicon
+    </footer>
 
+</body>
 </html>

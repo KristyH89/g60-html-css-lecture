@@ -1,0 +1,49 @@
+/* main-style.css */
+
+/* Reset */
+* {
+    margin: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+}
+
+/* Header */
+header {
+    background-color: #16A34A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    background-color: #61a078;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Form special */
+#fn-label {
+    color: red;
+}
+
+#fn {
+    color: #ff0000;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    color: #333;
+}
