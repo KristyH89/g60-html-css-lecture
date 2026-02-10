@@ -18,10 +18,23 @@ body {
     flex-direction: column;
     min-height: 100vh; /* minstens schermhoogte */
     font-family: Arial, sans-serif;
-    background-color: #eaf6ff; /* achtergrondkleur */
+    background-color: #dfe9e4; /* achtergrondkleur */
 }
 
 /* Main content groeit zodat footer naar beneden wordt gedrukt */
+
+.demo-text-image {
+    display: flex;
+    align-items: center; /* vertical alignment */
+    gap: 20px; /* ruimte tussen tekst en afbeelding */
+    margin-bottom: 20px;
+}
+
+.demo-text-image img {
+    max-width: 200px; /* pas breedte aan naar wens */
+    height: auto;
+    border-radius: 8px; /* optioneel: ronde hoeken */
+}
 main {
     flex: 1;
     padding: 20px; /* ruimte binnen main */
@@ -65,8 +78,11 @@ nav a {
 }
 
 .container {
-    padding: 20px;
-    color: #333;
+    max-width: 900px;           /* maximaal brede content */
+    margin: 20px auto;          /* horizontaal centreren en verticale ruimte */
+    padding: 20px 40px 20px 60px; /* top, right, bottom, left */
+    color: #333;                /* tekstkleur */
+    line-height: 1.6;           /* regelafstand voor leesbaarheid */
 }
 
 /* ------------------------------
