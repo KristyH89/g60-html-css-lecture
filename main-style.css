@@ -1,17 +1,35 @@
-/* main-style.css */
-
-/* Reset */
+/* ------------------------------
+   Reset & Base Styles
+------------------------------ */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body */
+/* Zorg dat html en body altijd 100% hoogte hebben */
+html, body {
+    height: 100%;
+}
+
+/* Flexbox layout voor hele pagina */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* minstens schermhoogte */
     font-family: Arial, sans-serif;
-    background-color: #eaf6ff;
+    background-color: #eaf6ff; /* achtergrondkleur */
 }
 
-/* Header */
+/* Main content groeit zodat footer naar beneden wordt gedrukt */
+main {
+    flex: 1;
+    padding: 20px; /* ruimte binnen main */
+}
+
+/* ------------------------------
+   Header Styles
+------------------------------ */
 header {
     background-color: #16A34A;
     color: #fff;
@@ -20,7 +38,9 @@ header {
     font-size: 32px;
 }
 
-/* Navigation */
+/* ------------------------------
+   Navigation Styles
+------------------------------ */
 nav {
     background-color: #61a078;
     padding: 10px;
@@ -33,7 +53,9 @@ nav a {
     margin: 0 15px;
 }
 
-/* Form special */
+/* ------------------------------
+   Form / Container Specific
+------------------------------ */
 #fn-label {
     color: red;
 }
@@ -42,8 +64,38 @@ nav a {
     color: #ff0000;
 }
 
-/* Container */
 .container {
     padding: 20px;
     color: #333;
+}
+
+/* ------------------------------
+   Footer Styles
+------------------------------ */
+footer {
+    background-color: #16A34A; /* donkergroen, zoals header */
+    color: #fff; /* witte tekst */
+    padding: 20px 10px; /* ruimte binnenin */
+    text-align: center; /* tekst centreren */
+    font-size: 14px;
+    border-top: 3px solid #10703d; /* subtiele lijn boven de footer */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #cceedd; /* lichte hoverkleur */
 }
