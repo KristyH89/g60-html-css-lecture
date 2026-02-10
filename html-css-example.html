@@ -35,58 +35,67 @@
 
     <!-- Main Content -->
     <main>
-        <form>
-            <h3>Registration Form</h3>
-            <p>Please fill in this form to register.</p>
-            <hr>
+       <form class="feedback-form">
+    <h3>Project Feedback</h3>
+    <p>
+        I would appreciate your feedback on this HTML & CSS project.
+        Your input helps me improve my development skills.
+    </p>
+    <hr>
 
-            <label for="fn"><b>First Name</b></label>
-            <input type="text" id="fn" placeholder="Enter First Name" name="firstName" required>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-            <label for="ln"><b>Last Name</b></label>
-            <input type="text" id="ln" placeholder="Enter Last Name" name="lastName" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="email"><b>Email</b></label>
-            <input type="email" id="email" placeholder="Enter Email" name="email" required>
+    <label for="topic">Feedback Type</label>
+    <select id="topic" name="topic">
+        <option value="design">Design & Layout</option>
+        <option value="structure">HTML Structure</option>
+        <option value="styling">CSS Styling</option>
+        <option value="general">General Feedback</option>
+    </select>
 
-            <label for="course">Course</label>
-            <select id="course" name="course">
-                <option value="1">Java</option>
-                <option value="2">C#</option>
-                <option value="3">Python</option>
-            </select>
+    <label for="message">Your Feedback</label>
+    <textarea id="message" name="message" rows="5"
+        placeholder="Write your feedback here..."></textarea>
 
-            <label for="description">Subject</label>
-            <textarea id="description" name="description" placeholder="Enter subject details here..."></textarea>
+    <button type="submit" class="submit-btn">Send Feedback</button>
+</form>
 
-            <hr>
+        
+<section class="feedback-overview">
+    <h3>Submitted Feedback</h3>
+    <p>
+        This table represents how collected feedback could be displayed in a real application.
+    </p>
 
-            <button type="submit">Register</button>
-        </form>
-
-        <hr>
-
+    <table>
+        ...
+    </table>
+</section>
         <table>
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
+                    <th>Name</th>
+                    <th>Feedback</th>
                     <th colspan="2">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Mehrdad</td>
-                    <td>Javan</td>
+                    <td>Mehrdad Javan</td>
+                    <td>This form is great for collecting user feedback!</td>
                     <td><button class="edit-btn">Edit</button></td>
                     <td><button class="delete-btn">Delete</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Simon</td>
-                    <td>Elbrink</td>
+                    <td>Simon Elbrink</td>
+                    <td>Easy to use and visually clear.</td>
                     <td><button class="edit-btn">Edit</button></td>
                     <td><button class="delete-btn">Delete</button></td>
                 </tr>
