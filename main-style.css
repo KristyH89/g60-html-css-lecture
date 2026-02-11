@@ -86,6 +86,23 @@ nav a {
 }
 
 /* ------------------------------
+   Skills Image Styles (Other page)
+------------------------------ */
+.skills-image {
+    display: flex;               /* flexbox gebruiken */
+    justify-content: center;     /* horizontaal centreren */
+    margin: 30px auto 0 auto;    /* ruimte boven + horizontaal auto */
+    max-width: 800px;            /* zelfde breedte als tabel */
+}
+
+.skills-image img {
+    max-width: 100%;             /* afbeelding past in container */
+    height: auto;
+    border-radius: 8px;          /* optioneel afgeronde hoeken */
+}
+
+
+/* ------------------------------
    Footer Styles
 ------------------------------ */
 footer {
